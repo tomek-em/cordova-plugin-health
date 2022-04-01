@@ -42,11 +42,11 @@
 
     <!-- Commented this because it means you can't download/use the app on iOS devices that don't support Apple Health (e.g. iPad) -->
     <!-- See https://github.com/dariosalvi78/cordova-plugin-health/issues/59 -->
-    <!-- <config-file target="*-Info.plist" parent="UIRequiredDeviceCapabilities">
+    <config-file target="*-Info.plist" parent="UIRequiredDeviceCapabilities">
       <array>
         <string>healthkit</string>
       </array>
-    </config-file> -->
+    </config-file>
 
     <!-- Usage description of Health, mandatory since iOS 10 -->
     <preference name="HEALTH_READ_PERMISSION" default=" " />
@@ -63,6 +63,14 @@
     </config-file>
 
     <config-file target="*/Entitlements-Release.plist" parent="com.apple.developer.healthkit">
+      <true/>
+    </config-file>
+
+    <config-file target="*-Debug.plist" parent="com.apple.developer.healthkit">
+      <true/>
+    </config-file>
+
+    <config-file target="*-Release.plist" parent="com.apple.developer.healthkit">
       <true/>
     </config-file>
 
