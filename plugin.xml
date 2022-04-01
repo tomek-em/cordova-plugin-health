@@ -58,18 +58,11 @@
       <string>$HEALTH_WRITE_PERMISSION</string>
     </config-file>
 
- <!--    <config-file target="*/Entitlements-Debug.plist" parent="com.apple.developer.healthkit">
+    <config-file target="*/Entitlements-Debug.plist" parent="com.apple.developer.healthkit">
       <true/>
     </config-file>
 
     <config-file target="*/Entitlements-Release.plist" parent="com.apple.developer.healthkit">
-      <true/>
-    </config-file> -->
-
-    <config-file target="*-Debug.plist" parent="com.apple.developer.healthkit">
-      <true/>
-    </config-file>
-    <config-file target="*-Release.plist" parent="com.apple.developer.healthkit">
       <true/>
     </config-file>
 
